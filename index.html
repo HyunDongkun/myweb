@@ -1,90 +1,112 @@
 <!DOCTYPE html>
-<html lang="ko">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <title>DK - 미니멀 패션 웹스토어</title>
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700&display=swap" rel="stylesheet">
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <a class="menu-toggle rounded" href="#"><i class="fas fa-bars"></i></a>
-       <nav id="sidebar-wrapper">
-    <ul class="sidebar-nav">
-        <li class="sidebar-brand"><a href="index.html">YEARSAGO</a></li>
-        <li class="sidebar-nav-item"><a href="index.html">HOME</a></li>
-        <li class="sidebar-nav-item"><a href="about.html">BRAND STORY</a></li>
-        <li class="sidebar-nav-item"><a href="lookbook.html">LOOKBOOK</a></li>
-        <li class="sidebar-nav-item"><a href="collection.html">COLLECTION</a></li>
-        <li class="sidebar-nav-item"><a href="cart.html">CART</a></li>
-        <li class="sidebar-nav-item"><a href="contact.html">SHOWROOM</a></li>
-    </ul>
-</nav>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" text="width=device-width, initial-scale=1.0">
+    <title>김광균 - 은수저</title>
+    <style>
+        @font-face {
+            font-family: 'SongamLeeHyeongSik';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2604-1@1.0/SongamIhyeongsik-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #111118;
+            color: #e0e0e6;
+            font-family: 'SongamLeeHyeongSik', '맑은 고딕', sans-serif;
+            line-height: 1.8;
+            letter-spacing: 0.05em;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 600px;
+            margin: 60px auto;
+            padding: 50px 30px;
+            background-color: #1b1c26;
+            border-radius: 12px;
+            border: 1px solid #2a2b3d;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: #f3e9dc;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-weight: normal;
+        }
+
+        .author {
+            font-size: 1.2rem;
+            color: #a8a8b3;
+            margin-bottom: 40px;
+        }
+
+        .text {
+            font-size: 1.25rem;
+            color: #d1d1d6;
+        }
+
+        .text p {
+            margin: 0 0 40px 0;
+        }
+
+        .text p:last-child {
+            margin-bottom: 0;
+        }
+
+        @media screen and (max-width: 480px) {
+            .container {
+                width: 95%;
+                margin: 30px auto;
+                padding: 40px 20px;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            .author {
+                margin-bottom: 30px;
+            }
+            .text {
+                font-size: 1.15rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>은수저</h1>
         
-        <header class="masthead d-flex align-items-center">
-            <div class="container px-4 px-lg-5 text-center">
-                <h1 class="mb-1">DK</h1>
-                <h3 class="mb-5"><em>2026 SUMMER COLLECTION</em></h3>
-                <a class="btn btn-dark btn-xl" href="collection.html">SHOP NOW</a>
-            </div>
-        </header>
-
-        <section class="content-section bg-light" id="about">
-            <div class="container px-4 px-lg-5 text-center">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8">
-                        <h2 class="mb-4">본질에 집중하는 실루엣</h2>
-                        <p class="lead mb-5 text-muted">
-                            시간이 지나도 변하지 않는 가치와 편안함을 제안합니다.<br>
-                            우리의 옷은 당신의 일상 속에 자연스럽게 스며듭니다.
-                        </p>
-                        <a class="btn btn-outline-dark btn-xl" href="about.html">브랜드 스토리 읽기</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="content-section" id="portfolio">
-            <div class="container px-4 px-lg-5">
-                <div class="content-section-heading text-center">
-                    <h3 class="text-secondary mb-0">New Arrivals</h3>
-                    <h2 class="mb-5">RECOMMENDED ITEMS</h2>
-                </div>
-                <div class="row gx-0">
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="product_outer.html">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Oversized Jacket</div>
-                                    <p class="mb-0">dark brown / 239,000 KRW</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/jacket.jpg" alt="Mac Coat" />
-                        </a>
-                    </div>
-                    <div class="col-lg-6">
-                        <a class="portfolio-item" href="product_top.html">
-                            <div class="caption">
-                                <div class="caption-content">
-                                    <div class="h2">Dyed shirt</div>
-                                    <p class="mb-0">dark grey / 89,000 KRW</p>
-                                </div>
-                            </div>
-                            <img class="img-fluid" src="assets/img/shirt.jpg" alt="Shirt" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <footer class="footer text-center bg-light">
-            <div class="container px-4 px-lg-5">
-                <p class="text-muted small mb-0">Copyright &copy; DK 2026. All Rights Reserved.</p>
-            </div>
-        </footer>
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="js/scripts.js"></script>
-    </body>
+        <div class="author">김광균</div>
+        
+        <div class="text">
+            <p>
+                산이 저문다.<br>
+                노을이 잠긴다.<br>
+                저녁 밥상에 애기가 없다.<br>
+                애기 앉던 방석에 한 쌍의 은수저<br>
+                은수저 끝에 눈물이 고인다.
+            </p>
+            <p>
+                한 밤중에 바람이 분다.<br>
+                바람 속에서 애기가 웃는다.<br>
+                애기는 방 속을 들여다 본다.<br>
+                들창을 열었다 다시 닫는다.
+            </p>
+            <p>
+                먼 들길을 애기가 간다.<br>
+                맨발 벗은 애기가 울면서 간다.<br>
+                불러도 대답이 없다.<br>
+                그림자마저 아른거린다.
+            </p>
+        </div>
+    </div>
+</body>
 </html>
